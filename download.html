@@ -3,60 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>文件下载示例</title>
+    <title>文件下载页面</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            margin: 20px;
         }
-        .container {
+        .download-container {
+            max-width: 600px;
+            margin: 0 auto;
             text-align: center;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .download-btn {
+        .download-container h1 {
+            color: #333;
+        }
+        .download-container a {
             display: inline-block;
+            margin: 10px;
             padding: 10px 20px;
             background-color: #007BFF;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 16px;
         }
-        .download-btn:hover {
+        .download-container a:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h1>选择文件进行下载地图</h1>
-    <p>请选择想玩的地图！：</p>
-    <div>
-        <label>
-            <input type="radio" name="奇葩的电梯之旅 1 版本：1.0.0" value="world/奇葩的电梯之旅 1.mcworld" checked>
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="file" value="files/file2.pdf">
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="file" value="files/file3.pdf">
-        </label>
+    <div class="download-container">
+        <h1>文件下载</h1>
+        <p>点击以下链接下载文件：</p>
+        <a href="world/奇葩的电梯之旅 1.mcworld" download>奇葩的电梯之旅 1 版本：1.0.0 发布于2025.2.12</a>
+        <a href="files/file2.zip" download>下载文件2（ZIP）</a>
+        <a href="files/file3.docx" download>下载文件3（Word文档）</a>
     </div>
-    <nav>
-            <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">关于我们</a></li>
-                <li><a href="Update log.html">更新日志</a></li>
-                <li><a href="download.html">下载地图</a></li>
-            </ul>
-    </nav>
 </body>
 </html>
